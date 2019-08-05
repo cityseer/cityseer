@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Cityseer API Docs</title>
+    <meta name="description" content="Computational tools for urban analysis">
+    
+    
+    <link rel="preload" href="/cityseer/assets/css/0.styles.7c391bb3.css" as="style"><link rel="preload" href="/cityseer/assets/js/app.293f2062.js" as="script"><link rel="preload" href="/cityseer/assets/js/2.de39922c.js" as="script"><link rel="preload" href="/cityseer/assets/js/17.855d4d29.js" as="script"><link rel="preload" href="/cityseer/assets/js/13.9adba541.js" as="script"><link rel="preload" href="/cityseer/assets/js/12.df7801a7.js" as="script"><link rel="preload" href="/cityseer/assets/js/11.1a5cc732.js" as="script"><link rel="prefetch" href="/cityseer/assets/js/10.1c7f8991.js"><link rel="prefetch" href="/cityseer/assets/js/14.32a4c4fc.js"><link rel="prefetch" href="/cityseer/assets/js/15.50a15f1c.js"><link rel="prefetch" href="/cityseer/assets/js/16.0e74828d.js"><link rel="prefetch" href="/cityseer/assets/js/18.db21ef8f.js"><link rel="prefetch" href="/cityseer/assets/js/19.f2bff150.js"><link rel="prefetch" href="/cityseer/assets/js/20.23c51d91.js"><link rel="prefetch" href="/cityseer/assets/js/3.54d9550c.js"><link rel="prefetch" href="/cityseer/assets/js/4.f03918b6.js"><link rel="prefetch" href="/cityseer/assets/js/5.0148d355.js"><link rel="prefetch" href="/cityseer/assets/js/6.970f401b.js"><link rel="prefetch" href="/cityseer/assets/js/7.84941293.js"><link rel="prefetch" href="/cityseer/assets/js/8.c6f533dd.js"><link rel="prefetch" href="/cityseer/assets/js/9.72d8d665.js">
+    <link rel="stylesheet" href="/cityseer/assets/css/0.styles.7c391bb3.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/cityseer/" class="home-link router-link-active"><img src="/cityseer/round_logo.png" alt="Cityseer API Docs" class="logo"> <span class="site-name can-hide">Cityseer API Docs</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/cityseer/" class="nav-link">home</a></div><div class="nav-item"><a href="/cityseer/intro.html" class="nav-link">docs</a></div><div class="nav-item"><a href="https://cityseer.io/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  cityseer.io
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <a href="https://github.com/cityseer/cityseer" target="_blank" rel="noopener noreferrer" class="repo-link">
+    github
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/cityseer/" class="nav-link">home</a></div><div class="nav-item"><a href="/cityseer/intro.html" class="nav-link">docs</a></div><div class="nav-item"><a href="https://cityseer.io/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  cityseer.io
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <a href="https://github.com/cityseer/cityseer" target="_blank" rel="noopener noreferrer" class="repo-link">
+    github
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>overview</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/cityseer/intro.html" class="sidebar-link">intro</a></li><li><a href="/cityseer/attribution.html" class="sidebar-link">attribution</a></li><li><a href="/cityseer/license.html" class="sidebar-link">license</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>guide</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/cityseer/guide/cleaning.html" class="sidebar-link">graph cleaning</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>cityseer.metrics</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/cityseer/metrics/layers.html" class="sidebar-link">metrics.layers</a></li><li><a href="/cityseer/metrics/networks.html" class="sidebar-link">metrics.networks</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>cityseer.util</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/cityseer/util/graphs.html" class="sidebar-link">util.graphs</a></li><li><a href="/cityseer/util/mock.html" class="active sidebar-link">util.mock</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/cityseer/util/mock.html#mock-graph" class="sidebar-link">mock_graph</a></li><li class="sidebar-sub-header"><a href="/cityseer/util/mock.html#mock-data-dict" class="sidebar-link">mock_data_dict</a></li><li class="sidebar-sub-header"><a href="/cityseer/util/mock.html#mock-categorical-data" class="sidebar-link">mock_categorical_data</a></li><li class="sidebar-sub-header"><a href="/cityseer/util/mock.html#mock-numerical-data" class="sidebar-link">mock_numerical_data</a></li><li class="sidebar-sub-header"><a href="/cityseer/util/mock.html#mock-species-data" class="sidebar-link">mock_species_data</a></li><li class="sidebar-sub-header"><a href="/cityseer/util/mock.html#mock-osm-data" class="sidebar-link">mock_osm_data</a></li></ul></li><li><a href="/cityseer/util/plot.html" class="sidebar-link">util.plot</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="cityseer-util-mock"><a href="#cityseer-util-mock" aria-hidden="true" class="header-anchor">#</a> cityseer.util.mock</h1> <p>A collection of functions for the generation of mock data. This module is predominately used for writing code tests.</p> <h2 id="mock-graph"><a href="#mock-graph" aria-hidden="true" class="header-anchor">#</a> mock_graph</h2> <div class="sig-style" data-v-be8a829e>mock_graph(wgs84_coords=False)</div> <p>Generates a <code>NetworkX</code> graph for testing or experimentation purposes.</p> <div class="heading-style" data-v-98009ffe>Parameters</div> <div class="container" data-v-342b6d4a><div class="column" data-v-342b6d4a><div class="elem-name" data-v-342b6d4a>
+      wgs84_coords
+    </div> <div class="elem-type" data-v-342b6d4a>
+      bool
+    </div></div> <div class="elem-content" data-v-342b6d4a><p data-v-342b6d4a>If set to <code data-v-342b6d4a>True</code>, the <code data-v-342b6d4a>x</code> and <code data-v-342b6d4a>y</code> attributes will be in <a href="https://epsg.io/4326" target="_blank" rel="noopener noreferrer" data-v-342b6d4a><code data-v-342b6d4a>WGS84</code><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound" data-v-342b6d4a><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> geographic coordinates instead of a projected cartesion coordinate system (default).</p></div></div> <div class="heading-style" data-v-98009ffe>Returns</div> <div class="container" data-v-342b6d4a><div class="column" data-v-342b6d4a><div class="elem-name" data-v-342b6d4a>
+      G
+    </div> <div class="elem-type" data-v-342b6d4a>
+      nx.Graph
+    </div></div> <div class="elem-content" data-v-342b6d4a><p data-v-342b6d4a>A <code data-v-342b6d4a>NetworkX</code> graph with <code data-v-342b6d4a>x</code> and <code data-v-342b6d4a>y</code> attributes.</p></div></div> <div class="language-python line-numbers-mode"><pre class="language-python"><code><span class="token keyword">from</span> cityseer<span class="token punctuation">.</span>util <span class="token keyword">import</span> mock<span class="token punctuation">,</span> graphs
+
+G <span class="token operator">=</span> mock<span class="token punctuation">.</span>mock_graph<span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><img src="/cityseer/assets/img/graph_example.9a31cdec.png" alt="Example graph" class="centre" style="max-height:450px;"> <h2 id="mock-data-dict"><a href="#mock-data-dict" aria-hidden="true" class="header-anchor">#</a> mock_data_dict</h2> <div class="sig-style" data-v-be8a829e>mock_data_dict(G, length=50, random_seed=None)</div> <p>Generates a dictionary containing mock data for testing or experimentation purposes.</p> <div class="heading-style" data-v-98009ffe>Parameters</div> <div class="container" data-v-342b6d4a><div class="column" data-v-342b6d4a><div class="elem-name" data-v-342b6d4a>
+      G
+    </div> <div class="elem-type" data-v-342b6d4a>
+      nx.Graph
+    </div></div> <div class="elem-content" data-v-342b6d4a><p data-v-342b6d4a>A <code data-v-342b6d4a>NetworkX</code> graph with <code data-v-342b6d4a>x</code> and <code data-v-342b6d4a>y</code> attributes. This is used in order to determine the spatial extents of the network. The returned data will be within these extents.</p></div></div> <div class="container" data-v-342b6d4a><div class="column" data-v-342b6d4a><div class="elem-name" data-v-342b6d4a>
+      length
+    </div> <div class="elem-type" data-v-342b6d4a>
+      int
+    </div></div> <div class="elem-content" data-v-342b6d4a><p data-v-342b6d4a>The number of data elements to return in the dictionary.</p></div></div> <div class="container" data-v-342b6d4a><div class="column" data-v-342b6d4a><div class="elem-name" data-v-342b6d4a>
+      random_seed
+    </div> <div class="elem-type" data-v-342b6d4a>
+      int
+    </div></div> <div class="elem-content" data-v-342b6d4a><p data-v-342b6d4a>For the use of a specified random seed.</p></div></div> <div class="heading-style" data-v-98009ffe>Returns</div> <div class="container" data-v-342b6d4a><div class="column" data-v-342b6d4a><div class="elem-name" data-v-342b6d4a>
+      dict
+    </div> <div class="elem-type" data-v-342b6d4a>
+      dict
+    </div></div> <div class="elem-content" data-v-342b6d4a><p data-v-342b6d4a>A dictionary where each entry consists of a <code data-v-342b6d4a>key</code> representing a distinct data point <code data-v-342b6d4a>uid</code>, and corresponding <code data-v-342b6d4a>x</code>, <code data-v-342b6d4a>y</code> and <code data-v-342b6d4a>live</code> values.</p></div></div> <h2 id="mock-categorical-data"><a href="#mock-categorical-data" aria-hidden="true" class="header-anchor">#</a> mock_categorical_data</h2> <div class="sig-style" data-v-be8a829e>mock_categorical_data(length, num_classes=10, random_seed=None)</div> <p>Generates a <code>numpy</code> array containing mock categorical data for testing or experimentation purposes.</p> <div class="heading-style" data-v-98009ffe>Parameters</div> <div class="container" data-v-342b6d4a><div class="column" data-v-342b6d4a><div class="elem-name" data-v-342b6d4a>
+      length
+    </div> <div class="elem-type" data-v-342b6d4a>
+      int
+    </div></div> <div class="elem-content" data-v-342b6d4a><p data-v-342b6d4a>The number of categorical elements to return in the array.</p></div></div> <div class="container" data-v-342b6d4a><div class="column" data-v-342b6d4a><div class="elem-name" data-v-342b6d4a>
+      num_classes
+    </div> <div class="elem-type" data-v-342b6d4a>
+      int
+    </div></div> <div class="elem-content" data-v-342b6d4a><p data-v-342b6d4a>The maximum number of unique classes to return in the randomly assigned categorical data. The classes are randomly generated from a pool of unique class labels of length <code data-v-342b6d4a>num_classes</code>. The number of returned unique classes will be less than or equal to <code data-v-342b6d4a>num_classes</code>.</p></div></div> <div class="container" data-v-342b6d4a><div class="column" data-v-342b6d4a><div class="elem-name" data-v-342b6d4a>
+      random_seed
+    </div> <div class="elem-type" data-v-342b6d4a>
+      int
+    </div></div> <div class="elem-content" data-v-342b6d4a><p data-v-342b6d4a>For the use of a specified random seed.</p></div></div> <div class="heading-style" data-v-98009ffe>Returns</div> <div class="container" data-v-342b6d4a><div class="column" data-v-342b6d4a><div class="elem-name" data-v-342b6d4a>
+      array
+    </div> <div class="elem-type" data-v-342b6d4a>
+      np.array
+    </div></div> <div class="elem-content" data-v-342b6d4a><p data-v-342b6d4a>A <code data-v-342b6d4a>numpy</code> array containing categorical data elements. The number of elements will match the <code data-v-342b6d4a>length</code> parameter. The categorical data will consist of randomly selected letters.</p></div></div> <h2 id="mock-numerical-data"><a href="#mock-numerical-data" aria-hidden="true" class="header-anchor">#</a> mock_numerical_data</h2> <div class="sig-style" data-v-be8a829e>mock_numerical_data(length, min=0, max=100000, num_arrs=1, random_seed=None)</div> <p>Generates a 2d <code>numpy</code> array containing mock numerical data for testing or experimentation purposes.</p> <div class="heading-style" data-v-98009ffe>Parameters</div> <div class="container" data-v-342b6d4a><div class="column" data-v-342b6d4a><div class="elem-name" data-v-342b6d4a>
+      length
+    </div> <div class="elem-type" data-v-342b6d4a>
+      int
+    </div></div> <div class="elem-content" data-v-342b6d4a><p data-v-342b6d4a>The number of categorical elements to return in the array.</p></div></div> <div class="container" data-v-342b6d4a><div class="column" data-v-342b6d4a><div class="elem-name" data-v-342b6d4a>
+      min
+    </div> <div class="elem-type" data-v-342b6d4a>
+      int
+    </div></div> <div class="elem-content" data-v-342b6d4a><p data-v-342b6d4a>The (inclusive) minimum value in the <code data-v-342b6d4a>min</code>, <code data-v-342b6d4a>max</code> range of randomly generated integers.</p></div></div> <div class="container" data-v-342b6d4a><div class="column" data-v-342b6d4a><div class="elem-name" data-v-342b6d4a>
+      max
+    </div> <div class="elem-type" data-v-342b6d4a>
+      int
+    </div></div> <div class="elem-content" data-v-342b6d4a><p data-v-342b6d4a>The (exclusive) maximum value in the <code data-v-342b6d4a>min</code>, <code data-v-342b6d4a>max</code> range of randomly generated integers.</p></div></div> <div class="container" data-v-342b6d4a><div class="column" data-v-342b6d4a><div class="elem-name" data-v-342b6d4a>
+      num_arrs
+    </div> <div class="elem-type" data-v-342b6d4a>
+      int
+    </div></div> <div class="elem-content" data-v-342b6d4a><p data-v-342b6d4a>The number of arrays to nest in the returned 2d array.</p></div></div> <div class="container" data-v-342b6d4a><div class="column" data-v-342b6d4a><div class="elem-name" data-v-342b6d4a>
+      random_seed
+    </div> <div class="elem-type" data-v-342b6d4a>
+      int
+    </div></div> <div class="elem-content" data-v-342b6d4a><p data-v-342b6d4a>For the use of a specified random seed.</p></div></div> <div class="heading-style" data-v-98009ffe>Returns</div> <div class="container" data-v-342b6d4a><div class="column" data-v-342b6d4a><div class="elem-name" data-v-342b6d4a>
+      array
+    </div> <div class="elem-type" data-v-342b6d4a>
+      np.array
+    </div></div> <div class="elem-content" data-v-342b6d4a><p data-v-342b6d4a>A 2d <code data-v-342b6d4a>numpy</code> array containing numerical data elements. The first dimension corresponds to the number of data arrays, and is set with the <code data-v-342b6d4a>num_arrs</code> parameter. The length of the second dimension will represents the number of data elements and will match the <code data-v-342b6d4a>length</code> parameter. The numerical data will consist of randomly selected integers.</p></div></div> <h2 id="mock-species-data"><a href="#mock-species-data" aria-hidden="true" class="header-anchor">#</a> mock_species_data</h2> <div class="sig-style" data-v-be8a829e>mock_species_data(random_seed=None)</div> <p>A generator function returning a series of randomly generated counts and corresponding probabilities for testing diversity measures. The data is generated in varying lengths from randomly assigned integers between 1 and 10. Matching integers are then collapsed into species &quot;classes&quot; with probabilities computed accordingly.</p> <div class="heading-style" data-v-98009ffe>Parameters</div> <div class="container" data-v-342b6d4a><div class="column" data-v-342b6d4a><div class="elem-name" data-v-342b6d4a>
+      random_seed
+    </div> <div class="elem-type" data-v-342b6d4a>
+      int
+    </div></div> <div class="elem-content" data-v-342b6d4a><p data-v-342b6d4a>For the use of a specified random seed.</p></div></div> <div class="heading-style" data-v-98009ffe>Returns</div> <div class="container" data-v-342b6d4a><div class="column" data-v-342b6d4a><div class="elem-name" data-v-342b6d4a>
+      counts
+    </div> <div class="elem-type" data-v-342b6d4a>
+      np.array
+    </div></div> <div class="elem-content" data-v-342b6d4a><p data-v-342b6d4a>The number of members for each species class.</p></div></div> <div class="container" data-v-342b6d4a><div class="column" data-v-342b6d4a><div class="elem-name" data-v-342b6d4a>
+      probs
+    </div> <div class="elem-type" data-v-342b6d4a>
+      np.array
+    </div></div> <div class="elem-content" data-v-342b6d4a><p data-v-342b6d4a>The probability of encountering the respective species classes.</p></div></div> <div class="language-python line-numbers-mode"><pre class="language-python"><code><span class="token keyword">from</span> cityseer<span class="token punctuation">.</span>util <span class="token keyword">import</span> mock
+
+<span class="token keyword">for</span> counts<span class="token punctuation">,</span> probs <span class="token keyword">in</span> mock<span class="token punctuation">.</span>mock_species_data<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    cs <span class="token operator">=</span> <span class="token punctuation">[</span>c <span class="token keyword">for</span> c <span class="token keyword">in</span> counts<span class="token punctuation">]</span>
+    ps <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token builtin">round</span><span class="token punctuation">(</span>p<span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">)</span> <span class="token keyword">for</span> p <span class="token keyword">in</span> probs<span class="token punctuation">]</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>cs<span class="token punctuation">,</span> ps<span class="token punctuation">)</span>
+    
+<span class="token comment"># c = [1]</span>
+<span class="token comment"># p = [1.0]</span>
+
+<span class="token comment"># c = [1, 1, 2, 2]</span>
+<span class="token comment"># p = [0.167, 0.167, 0.333, 0.333]</span>
+
+<span class="token comment"># c = [1, 4, 3, 1, 1, 1]</span>
+<span class="token comment"># p = [0.091, 0.364, 0.273, 0.091, 0.091, 0.091]</span>
+
+<span class="token comment"># c = [2, 1, 2, 3, 3, 2, 1, 2]</span>
+<span class="token comment"># p = [0.125, 0.062, 0.125, 0.188, 0.188, 0.125, 0.062, 0.125]</span>
+
+<span class="token comment"># etc.</span>
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br></div></div><h2 id="mock-osm-data"><a href="#mock-osm-data" aria-hidden="true" class="header-anchor">#</a> mock_osm_data</h2> <div class="sig-style" data-v-be8a829e>mock_osm_data(alt=False)</div> <p>Returns a <code>JSON</code> string representing a typical <a href="https://www.openstreetmap.org" target="_blank" rel="noopener noreferrer"><code>Open Street Map</code><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> response. Used for testing purposes.</p> <div class="tip custom-block"><p class="custom-block-title">Hint</p> <p>Where the intent is to derive a graph from this data: use in combination with <a href="/cityseer/util/graphs.html#nx-from-osm"><code>graphs.nX_from_osm</code></a>.</p></div> <div class="heading-style" data-v-98009ffe>Parameters</div> <div class="container" data-v-342b6d4a><div class="column" data-v-342b6d4a><div class="elem-name" data-v-342b6d4a>
+      alt
+    </div> <div class="elem-type" data-v-342b6d4a>
+      bool
+    </div></div> <div class="elem-content" data-v-342b6d4a><p data-v-342b6d4a>When set to <code data-v-342b6d4a>True</code>: provides an alternative set of OSM data.</p></div></div> <div class="heading-style" data-v-98009ffe>Returns</div> <div class="container" data-v-342b6d4a><div class="column" data-v-342b6d4a><div class="elem-name" data-v-342b6d4a>
+      osm_json
+    </div> <div class="elem-type" data-v-342b6d4a>
+      str
+    </div></div> <div class="elem-content" data-v-342b6d4a><p data-v-342b6d4a>A <code data-v-342b6d4a>JSON</code> string representing OSM <code data-v-342b6d4a>nodes</code> and <code data-v-342b6d4a>ways</code> data.</p></div></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated: </span> <span class="time">8/5/2019, 1:02:22 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/cityseer/util/graphs.html" class="prev">
+          util.graphs
+        </a></span> <span class="next"><a href="/cityseer/util/plot.html">
+          util.plot
+        </a>
+        →
+      </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/cityseer/assets/js/app.293f2062.js" defer></script><script src="/cityseer/assets/js/2.de39922c.js" defer></script><script src="/cityseer/assets/js/17.855d4d29.js" defer></script><script src="/cityseer/assets/js/13.9adba541.js" defer></script><script src="/cityseer/assets/js/12.df7801a7.js" defer></script><script src="/cityseer/assets/js/11.1a5cc732.js" defer></script>
+  </body>
+</html>
